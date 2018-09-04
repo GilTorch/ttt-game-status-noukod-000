@@ -39,14 +39,14 @@ end
 
 def draw?(board)
     if full?(board)
-      (won?(board).class==Array)?false:true
+      (won?(board))?false:true
     else
       false
     end
 end
 
 def over?(board)
-    full?(board) || won?(board) || draw?(board)
+     won?(board) || draw?(board)
 end
 
 def winner(board)
